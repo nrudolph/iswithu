@@ -9,8 +9,8 @@
    — smooth lag follow + rotation + hover state
 ══════════════════════════════════════════════ */
 (function () {
-  const star = document.getElementById('cursor-earth');
-  const ring = document.getElementById('cursor-ring-earth');
+  const star = document.getElementById('cursor-star');
+  const ring = document.getElementById('cursor-ring-star');
   if (!star || !ring) return;
 
   let mx = -200, my = -200;   // target (mouse)
@@ -141,24 +141,49 @@ function buildWave(id, count = 40) {
 ['mw1','mw2','mw3','mw4','mw5'].forEach(id => buildWave(id));
 
 /* ══════════════════════════════════════════════
-   MIX PLAY / PAUSE
+   MIX PLAY / PAUSE  (+ SoundCloud Widget API)
 ══════════════════════════════════════════════ */
 const PLAY  = '<polygon points="5,3 17,10 5,17"/>';
 const PAUSE = '<rect x="4" y="3" width="4" height="14" rx="1"/><rect x="12" y="3" width="4" height="14" rx="1"/>';
+
+/* Build a map of SC widgets keyed by iframe id */
+const scWidgets = {};
+document.querySelectorAll('[data-sc-id]').forEach(row => {
+  const id = row.dataset.scId;
+  const iframe = document.getElementById(id);
+  if (iframe && window.SC) {
+    const widget = SC.Widget(iframe);
+    scWidgets[id] = widget;
+    /* Sync button when track ends naturally */
+    widget.bind(SC.Widget.Events.FINISH, () => {
+      row.classList.remove('playing');
+      row.querySelector('.mplay svg').innerHTML = PLAY;
+    });
+  }
+});
+
+function stopAll() {
+  document.querySelectorAll('.mix-row').forEach(r => {
+    r.classList.remove('playing');
+    r.querySelector('.mplay svg').innerHTML = PLAY;
+  });
+  Object.values(scWidgets).forEach(w => w.pause());
+}
 
 document.querySelectorAll('.mplay').forEach(btn => {
   btn.addEventListener('click', () => {
     const row    = btn.closest('.mix-row');
     const active = row.classList.contains('playing');
+    const scId   = row.dataset.scId;
 
-    document.querySelectorAll('.mix-row').forEach(r => {
-      r.classList.remove('playing');
-      r.querySelector('.mplay svg').innerHTML = PLAY;
-    });
+    stopAll();
 
     if (!active) {
       row.classList.add('playing');
       btn.querySelector('svg').innerHTML = PAUSE;
+      if (scId && scWidgets[scId]) {
+        scWidgets[scId].play();
+      }
     }
   });
 });

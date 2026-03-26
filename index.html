@@ -3,41 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>isWithU — Electronic Music Platform</title>
-  <meta name="description" content="isWithU is an electronic music platform rooted in positive energy and the belief that you are never alone." />
+  <title>isWithU</title>
+  <meta name="description" content="isWithU is an platform rooted in positive energy and the belief that you are never alone." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ── CUSTOM EARTH CURSOR ── -->
-  <div id="cursor-earth" aria-hidden="true">
+  <!-- ── CUSTOM LIGHT BURST CURSOR ── -->
+  <div id="cursor-star" aria-hidden="true">
     <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <clipPath id="earthClip"><circle cx="15" cy="15" r="13"/></clipPath>
-      </defs>
-      <!-- Ocean -->
-      <circle cx="15" cy="15" r="13" fill="#1a6fa8"/>
-      <!-- Land masses -->
-      <g clip-path="url(#earthClip)" fill="#2d8f50">
-        <!-- Europe / Africa -->
-        <path d="M13,3 Q16,3 17,6 Q18,9 16,11 Q14,13 13,11 Q11,9 12,6 Z"/>
-        <path d="M12,12 Q15,11 16,14 Q17,18 15,21 Q13,23 11,21 Q9,18 10,15 Z"/>
-        <!-- Americas -->
-        <path d="M5,7 Q8,6 9,9 Q10,12 8,14 Q6,15 5,13 Q3,10 5,7Z"/>
-        <path d="M4,15 Q7,14 8,17 Q8,21 6,23 Q4,22 3,19 Q3,16 4,15Z"/>
-        <!-- Asia blob -->
-        <path d="M18,5 Q23,4 25,7 Q27,11 25,14 Q22,16 19,14 Q17,11 18,5Z"/>
-        <!-- Australia -->
-        <path d="M21,19 Q24,18 25,21 Q24,24 21,24 Q19,22 21,19Z"/>
-      </g>
-      <!-- Atmosphere highlight -->
-      <circle cx="15" cy="15" r="13" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-      <ellipse cx="11" cy="10" rx="3" ry="2" fill="rgba(255,255,255,0.08)" transform="rotate(-30 11 10)"/>
+      <!-- Four-pointed light burst -->
+      <polygon points="15,0 17,13 30,15 17,17 15,30 13,17 0,15 13,13" fill="#ffd400"/>
     </svg>
   </div>
-  <div id="cursor-ring-earth" aria-hidden="true"></div>
+  <div id="cursor-ring-star" aria-hidden="true"></div>
 
   <!-- ── NAV ── -->
   <nav id="nav">
@@ -87,7 +68,7 @@
     </div>
 
     <div class="hero-content">
-      <p class="hero-label cs">Electronic Music Platform</p>
+     <!-- <p class="hero-label cs">Electronic Music Platform</p> -->
       <h1 class="hero-wm">
         <span class="wm-w">is</span><em class="wm-g">With</em><span class="wm-w">U</span>
       </h1>
@@ -174,21 +155,7 @@
   <!-- ── TICKER 2 (RTL) ── -->
   <div class="ticker-band ticker-rtl" aria-hidden="true">
     <div class="ticker-track">
-      <span class="ticker-item">ORION DEPTH</span>
-      <span class="ticker-star">★</span>
-      <span class="ticker-item">LYRA WAVE</span>
-      <span class="ticker-star">★</span>
-      <span class="ticker-item">SOLA</span>
-      <span class="ticker-star">★</span>
-      <span class="ticker-item">ECHO SAINT</span>
-      <span class="ticker-star">★</span>
-      <span class="ticker-item">ORION DEPTH</span>
-      <span class="ticker-star">★</span>
-      <span class="ticker-item">LYRA WAVE</span>
-      <span class="ticker-star">★</span>
-      <span class="ticker-item">SOLA</span>
-      <span class="ticker-star">★</span>
-      <span class="ticker-item">ECHO SAINT</span>
+      <span class="ticker-item">Nathanael Amadeus</span>
       <span class="ticker-star">★</span>
     </div>
   </div>
@@ -204,66 +171,24 @@
 
         <article class="acard cs">
           <div class="acard-head ah-1">
-            <span class="ah-init">ON</span>
+            <span class="ah-init">NA</span>
           </div>
           <div class="acard-body">
             <div class="acard-genres">
-              <span class="gtag">Melodic Techno</span>
               <span class="gtag">Deep House</span>
+              <span class="gtag">Tech House</span>
+              <span class="gtag">Uplifting Techno</span>
             </div>
-            <h3 class="acard-name">Orion Depth</h3>
-            <p class="acard-bio">Hypnotic journeys through melodic techno and deep house. Resident since 2023.</p>
+            <h3 class="acard-name">Nathanael Amadeus</h3>
+            <p class="acard-bio">Berlin-based DJ Nathanael blends hypnotic techno and house with deep, atmospheric textures, crafting immersive and
+            uplifting sets that move between driving energy and introspective moments. He believes in storytelling through sound,
+            focusing on raw design and fluid transitions—balancing intensity and depth for both dancefloor and late-night listening.</p>
           </div>
-          <a href="#mixes" class="acard-cta">3 Mixes →</a>
-        </article>
-
-        <article class="acard cs">
-          <div class="acard-head ah-2">
-            <span class="ah-init">LW</span>
-          </div>
-          <div class="acard-body">
-            <div class="acard-genres">
-              <span class="gtag">Ambient</span>
-              <span class="gtag">Downtempo</span>
-            </div>
-            <h3 class="acard-name">Lyra Wave</h3>
-            <p class="acard-bio">Ambient textures and downtempo explorations for the still moments.</p>
-          </div>
-          <a href="#mixes" class="acard-cta">2 Mixes →</a>
-        </article>
-
-        <article class="acard cs">
-          <div class="acard-head ah-3">
-            <span class="ah-init">SL</span>
-          </div>
-          <div class="acard-body">
-            <div class="acard-genres">
-              <span class="gtag">Progressive House</span>
-              <span class="gtag">Euphoric</span>
-            </div>
-            <h3 class="acard-name">SOLA</h3>
-            <p class="acard-bio">Pure euphoria. Relentless climbs through progressive house and uplifting anthems.</p>
-          </div>
-          <a href="#mixes" class="acard-cta">4 Mixes →</a>
-        </article>
-
-        <article class="acard cs">
-          <div class="acard-head ah-4">
-            <span class="ah-init">ES</span>
-          </div>
-          <div class="acard-body">
-            <div class="acard-genres">
-              <span class="gtag">Organic Electronic</span>
-              <span class="gtag">Breakbeat</span>
-            </div>
-            <h3 class="acard-name">Echo Saint</h3>
-            <p class="acard-bio">Where organic sounds meet electronic precision. Live instruments, modern production.</p>
-          </div>
-          <a href="#mixes" class="acard-cta">2 Mixes →</a>
+          <a href="#mixes" class="acard-cta">1 Mix →</a>
         </article>
 
       </div>
-      <p class="more-note cs">More artists joining — <a href="#join">stay in the loop ★</a></p>
+      <!-- <p class="more-note cs">More artists joining — <a href="#join">stay in the loop ★</a></p> -->
     </div>
   </section>
 
@@ -275,77 +200,21 @@
         <h2 class="sec-h">Latest Sets</h2>
       </div>
       <div class="mixes-table">
-
-        <div class="mix-row cs" data-playing="false">
+        <div class="mix-row cs" data-playing="false" data-sc-id="sc1">
           <span class="mn">01</span>
           <div class="mix-bar mb-1"></div>
           <div class="mix-info">
-            <span class="ma">SOLA</span>
-            <h3 class="mt">Morning Light Vol. 3</h3>
+            <span class="ma">Nathanael Amadeus</span>
+            <h3 class="mt">Tomorrow shall be my dancing day! | Live DJ-Set at Jakob Café</h3>
           </div>
           <div class="mix-wv" id="mw1"></div>
-          <span class="md">1:28:00</span>
-          <span class="mg">Uplifting House</span>
-          <button class="mplay" aria-label="Play">
-            <svg viewBox="0 0 20 20"><polygon points="5,3 17,10 5,17"/></svg>
-          </button>
-        </div>
-
-        <div class="mix-row cs" data-playing="false">
-          <span class="mn">02</span>
-          <div class="mix-bar mb-2"></div>
-          <div class="mix-info">
-            <span class="ma">Orion Depth</span>
-            <h3 class="mt">Deep Space Sessions #3</h3>
-          </div>
-          <div class="mix-wv" id="mw2"></div>
-          <span class="md">2:04:00</span>
-          <span class="mg">Melodic Techno</span>
-          <button class="mplay" aria-label="Play">
-            <svg viewBox="0 0 20 20"><polygon points="5,3 17,10 5,17"/></svg>
-          </button>
-        </div>
-
-        <div class="mix-row cs" data-playing="false">
-          <span class="mn">03</span>
-          <div class="mix-bar mb-3"></div>
-          <div class="mix-info">
-            <span class="ma">Lyra Wave</span>
-            <h3 class="mt">Still Waters</h3>
-          </div>
-          <div class="mix-wv" id="mw3"></div>
-          <span class="md">1:12:00</span>
-          <span class="mg">Ambient</span>
-          <button class="mplay" aria-label="Play">
-            <svg viewBox="0 0 20 20"><polygon points="5,3 17,10 5,17"/></svg>
-          </button>
-        </div>
-
-        <div class="mix-row cs" data-playing="false">
-          <span class="mn">04</span>
-          <div class="mix-bar mb-4"></div>
-          <div class="mix-info">
-            <span class="ma">Echo Saint</span>
-            <h3 class="mt">Sacred Energy Vol. 2</h3>
-          </div>
-          <div class="mix-wv" id="mw4"></div>
-          <span class="md">1:45:00</span>
-          <span class="mg">Organic Electronic</span>
-          <button class="mplay" aria-label="Play">
-            <svg viewBox="0 0 20 20"><polygon points="5,3 17,10 5,17"/></svg>
-          </button>
-        </div>
-
-        <div class="mix-row cs" data-playing="false">
-          <span class="mn">05</span>
-          <div class="mix-bar mb-1"></div>
-          <div class="mix-info">
-            <span class="ma">SOLA</span>
-            <h3 class="mt">High Vibration 001</h3>
-          </div>
-          <div class="mix-wv" id="mw5"></div>
-          <span class="md">1:55:00</span>
-          <span class="mg">Progressive</span>
+          <span class="md">—</span>
+          <span class="mg">Live DJ-Set</span>
+          <a class="mlink" href="https://soundcloud.com/nathanael_a/tomorrow-shall-be-my-dancing" target="_blank" rel="noopener" aria-label="Open on SoundCloud">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 3h6v6M17 3l-9 9M8 5H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-4"/>
+            </svg>
+          </a>
           <button class="mplay" aria-label="Play">
             <svg viewBox="0 0 20 20"><polygon points="5,3 17,10 5,17"/></svg>
           </button>
@@ -360,15 +229,11 @@
     <div class="ticker-track">
       <span class="ticker-item">MIX SETS</span>
       <span class="ticker-star">★</span>
-      <span class="ticker-item">UPCOMING RELEASES</span>
-      <span class="ticker-star">★</span>
       <span class="ticker-item">FUTURE EVENTS</span>
       <span class="ticker-star">★</span>
       <span class="ticker-item">COMMUNITY</span>
       <span class="ticker-star">★</span>
       <span class="ticker-item">MIX SETS</span>
-      <span class="ticker-star">★</span>
-      <span class="ticker-item">UPCOMING RELEASES</span>
       <span class="ticker-star">★</span>
       <span class="ticker-item">FUTURE EVENTS</span>
       <span class="ticker-star">★</span>
@@ -400,6 +265,8 @@
   </section>
 
   <!-- ── JOIN ── -->
+
+  <!--
   <section id="join" class="sec">
     <div class="container">
       <div class="join-body cs">
@@ -413,22 +280,17 @@
         <p class="join-confirm" id="jc"></p>
         <div class="socials">
           <a href="#" class="soc">SoundCloud</a><span>·</span>
-          <a href="#" class="soc">Spotify</a><span>·</span>
-          <a href="#" class="soc">Apple Music</a><span>·</span>
-          <a href="#" class="soc">Bandcamp</a><span>·</span>
-          <a href="#" class="soc">Instagram</a><span>·</span>
-          <a href="#" class="soc">YouTube</a>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- ── FOOTER ── -->
   <footer class="footer">
     <div class="container footer-inner">
       <div>
         <span class="footer-logo">is<em>With</em>U</span>
-        <span class="footer-sub">Electronic Music Platform</span>
+      <!--  <span class="footer-sub">Electronic Music Platform</span> -->
       </div>
       <nav class="footer-nav">
         <a href="#about">Platform</a>
@@ -441,6 +303,14 @@
     </div>
   </footer>
 
+  <!-- ── SOUNDCLOUD HIDDEN PLAYERS ── -->
+  <div style="display:none" aria-hidden="true">
+    <iframe id="sc1"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2284142081&auto_play=false&color=%23ffd400"
+      allow="autoplay"></iframe>
+  </div>
+
+  <script src="https://w.soundcloud.com/player/api.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
