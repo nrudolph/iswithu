@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>isWithU — Music</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#">isWithU</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#releases">Releases</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mm-link">About</a></li>
+      <li><a href="#releases" class="mm-link">Releases</a></li>
+      <li><a href="#events" class="mm-link">Events</a></li>
+      <li><a href="#contact" class="mm-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="waveCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="dot"></span>
+        <span>Now Playing</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="line">is</span><span class="line accent">With</span><span class="line">U</span>
+      </h1>
+      <p class="hero-sub">Electronic · Ambient · Emotion</p>
+      <div class="hero-cta">
+        <a href="#releases" class="btn btn-primary">Listen Now</a>
+        <a href="#events" class="btn btn-ghost">Upcoming Shows</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="artist-card">
+            <div class="artist-img-wrap">
+              <div class="artist-placeholder">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <radialGradient id="ag" cx="50%" cy="40%" r="60%">
+                      <stop offset="0%" stop-color="#a78bfa"/>
+                      <stop offset="100%" stop-color="#1e1b4b"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="200" height="200" fill="url(#ag)"/>
+                  <circle cx="100" cy="75" r="35" fill="rgba(255,255,255,0.15)"/>
+                  <ellipse cx="100" cy="160" rx="55" ry="35" fill="rgba(255,255,255,0.1)"/>
+                </svg>
+              </div>
+            </div>
+            <div class="artist-badge">Artist</div>
+          </div>
+          <div class="glow-orb orb-1"></div>
+          <div class="glow-orb orb-2"></div>
+        </div>
+        <div class="about-text reveal">
+          <span class="section-label">The Artist</span>
+          <h2>Sound as a <em>feeling</em></h2>
+          <p>isWithU crafts immersive sonic landscapes at the intersection of electronic music, ambient texture, and raw emotional resonance. Born from late-night sessions and a deep love for sound design, each track is a journey through mood and memory.</p>
+          <p>Drawing from a palette of synthesizers, field recordings, and vocal fragments, the project explores what it means to truly be present — with yourself, with others, with sound.</p>
+          <div class="stat-row">
+            <div class="stat">
+              <span class="stat-num">2019</span>
+              <span class="stat-label">Founded</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">12+</span>
+              <span class="stat-label">Releases</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">50+</span>
+              <span class="stat-label">Live Shows</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELEASES -->
+  <section id="releases" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Discography</span>
+        <h2>Latest <em>Releases</em></h2>
+      </div>
+      <div class="releases-grid">
+
+        <div class="release-card reveal">
+          <div class="release-cover rc-1">
+            <div class="release-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="release-info">
+            <span class="release-type">Album</span>
+            <h3>Weightless</h3>
+            <p class="release-meta">2024 · 11 Tracks</p>
+          </div>
+        </div>
+
+        <div class="release-card reveal">
+          <div class="release-cover rc-2">
+            <div class="release-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="release-info">
+            <span class="release-type">EP</span>
+            <h3>Dissolve</h3>
+            <p class="release-meta">2023 · 5 Tracks</p>
+          </div>
+        </div>
+
+        <div class="release-card reveal">
+          <div class="release-cover rc-3">
+            <div class="release-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="release-info">
+            <span class="release-type">Single</span>
+            <h3>Hold</h3>
+            <p class="release-meta">2023 · 4:22</p>
+          </div>
+        </div>
+
+        <div class="release-card reveal">
+          <div class="release-cover rc-4">
+            <div class="release-play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="release-info">
+            <span class="release-type">Album</span>
+            <h3>Signal Loss</h3>
+            <p class="release-meta">2022 · 9 Tracks</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="releases-cta reveal">
+        <a href="#" class="btn btn-ghost">View All Releases →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Live</span>
+        <h2>Upcoming <em>Events</em></h2>
+      </div>
+      <div class="events-list">
+
+        <div class="event-row reveal">
+          <div class="event-date">
+            <span class="event-day">14</span>
+            <span class="event-month">APR</span>
+          </div>
+          <div class="event-info">
+            <h3 class="event-name">Fabric — Room 2</h3>
+            <p class="event-location">London, UK</p>
+          </div>
+          <div class="event-tags">
+            <span class="tag">Headliner</span>
+            <span class="tag tag-live">Live Set</span>
+          </div>
+          <a href="#" class="btn btn-sm">Tickets</a>
+        </div>
+
+        <div class="event-row reveal">
+          <div class="event-date">
+            <span class="event-day">02</span>
+            <span class="event-month">MAY</span>
+          </div>
+          <div class="event-info">
+            <h3 class="event-name">De School</h3>
+            <p class="event-location">Amsterdam, NL</p>
+          </div>
+          <div class="event-tags">
+            <span class="tag">Support</span>
+          </div>
+          <a href="#" class="btn btn-sm">Tickets</a>
+        </div>
+
+        <div class="event-row reveal">
+          <div class="event-date">
+            <span class="event-day">18</span>
+            <span class="event-month">MAY</span>
+          </div>
+          <div class="event-info">
+            <h3 class="event-name">Berghain Kantine</h3>
+            <p class="event-location">Berlin, DE</p>
+          </div>
+          <div class="event-tags">
+            <span class="tag">Headliner</span>
+            <span class="tag tag-live">Live Set</span>
+          </div>
+          <a href="#" class="btn btn-sm">Tickets</a>
+        </div>
+
+        <div class="event-row reveal">
+          <div class="event-date">
+            <span class="event-day">07</span>
+            <span class="event-month">JUN</span>
+          </div>
+          <div class="event-info">
+            <h3 class="event-name">Sonar Festival</h3>
+            <p class="event-location">Barcelona, ES</p>
+          </div>
+          <div class="event-tags">
+            <span class="tag">Festival</span>
+          </div>
+          <a href="#" class="btn btn-sm">Info</a>
+        </div>
+
+        <div class="event-row reveal">
+          <div class="event-date">
+            <span class="event-day">21</span>
+            <span class="event-month">JUN</span>
+          </div>
+          <div class="event-info">
+            <h3 class="event-name">Mutek</h3>
+            <p class="event-location">Montréal, CA</p>
+          </div>
+          <div class="event-tags">
+            <span class="tag">Festival</span>
+            <span class="tag tag-live">Live Set</span>
+          </div>
+          <a href="#" class="btn btn-sm">Info</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESS / QUOTE -->
+  <section class="section section-dark section-quote">
+    <div class="container">
+      <blockquote class="pull-quote reveal">
+        <p>"isWithU creates the kind of music that finds you in the dark and stays."</p>
+        <cite>— Resident Advisor</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <span class="section-label">Get in touch</span>
+          <h2>Bookings &amp; <em>Press</em></h2>
+          <p>For booking requests, press enquiries, and collaborations, reach out via the links below.</p>
+          <div class="contact-links">
+            <a href="mailto:booking@iswithu.com" class="contact-link">
+              <span class="cl-icon">✉</span>
+              <span>booking@iswithu.com</span>
+            </a>
+            <a href="mailto:press@iswithu.com" class="contact-link">
+              <span class="cl-icon">✉</span>
+              <span>press@iswithu.com</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal">
+          <div class="social-grid">
+            <a href="#" class="social-card">
+              <span class="sc-label">Spotify</span>
+              <span class="sc-arrow">→</span>
+            </a>
+            <a href="#" class="social-card">
+              <span class="sc-label">Apple Music</span>
+              <span class="sc-arrow">→</span>
+            </a>
+            <a href="#" class="social-card">
+              <span class="sc-label">SoundCloud</span>
+              <span class="sc-arrow">→</span>
+            </a>
+            <a href="#" class="social-card">
+              <span class="sc-label">Bandcamp</span>
+              <span class="sc-arrow">→</span>
+            </a>
+            <a href="#" class="social-card">
+              <span class="sc-label">Instagram</span>
+              <span class="sc-arrow">→</span>
+            </a>
+            <a href="#" class="social-card">
+              <span class="sc-label">YouTube</span>
+              <span class="sc-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-logo">isWithU</span>
+      <span class="footer-copy">© 2024 isWithU. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

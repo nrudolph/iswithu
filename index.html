@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>isWithU</title>
+  <meta name="description" content="isWithU is an platform rooted in positive energy and the belief that you are never alone." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── CUSTOM LIGHT BURST CURSOR ── -->
+  <div id="cursor-star" aria-hidden="true">
+    <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+      <!-- Four-pointed light burst -->
+      <polygon points="15,0 17,13 30,15 17,17 15,30 13,17 0,15 13,13" fill="#ffd400"/>
+    </svg>
+  </div>
+  <div id="cursor-ring-star" aria-hidden="true"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">is<em>With</em>U</a>
+      <ul class="nav-links">
+        <li><a href="#about">Platform</a></li>
+        <li><a href="#artists">Artists</a></li>
+        <li><a href="#mixes">Mixes</a></li>
+        <li><a href="#meaning">The Name</a></li>
+       <!-- <li><a href="#join">Join</a></li> -->
+      </ul>
+      <button class="burger" id="burger" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mob" id="mob">
+    <button class="mob-x" id="mobX">✕</button>
+    <nav>
+      <a href="#about"   class="mob-a">Platform</a>
+      <a href="#artists" class="mob-a">Artists</a>
+      <a href="#mixes"   class="mob-a">Mixes</a>
+      <a href="#meaning" class="mob-a">The Name</a>
+    <!-- <a href="#join"    class="mob-a">Join</a> -->
+    </nav>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <canvas id="heroCanvas"></canvas>
+
+    <!-- Spinning ring with circular text -->
+    <div class="spin-ring" id="spinRing">
+      <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <path id="cp" d="M 80 80 m -62 0 a 62 62 0 1 1 124 0 a 62 62 0 1 1 -124 0"/>
+        </defs>
+        <text class="ring-text">
+          <textPath href="#cp">
+            IS WITH YOU ···· IS WITH US ···· IS WITH ME ····
+          </textPath>
+        </text>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+     <!-- <p class="hero-label cs">Electronic Music Platform</p> -->
+      <h1 class="hero-wm">
+        <span class="wm-w">is</span><em class="wm-g">With</em><span class="wm-w">U</span>
+      </h1>
+      <p class="hero-sub cs">Sound for the soul. A platform for artists and the belief<br>that you are never alone.</p>
+      <div class="hero-btns cs">
+        <a href="#artists" class="btn btn-gold">Discover Artists</a>
+        <a href="#mixes"   class="btn btn-outline">Listen to Mixes</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-cue">
+      <div class="sc-line"></div>
+    </div>
+  </section>
+
+  <!-- ── TICKER 1 ── -->
+  <div class="ticker-band" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item">ELECTRONIC MUSIC</span>
+      <span class="ticker-star">★</span>
+      <span class="ticker-item">DJ MIX SETS</span>
+      <span class="ticker-star">★</span>
+      <span class="ticker-item">POSITIVE VIBES</span>
+      <span class="ticker-star">★</span>
+      <span class="ticker-item">COMMUNITY</span>
+      <span class="ticker-star">★</span>
+      <span class="ticker-item">UPLIFTING SOUNDS</span>
+      <span class="ticker-star">★</span>
+    </div>
+  </div>
+
+  <!-- ── PLATFORM / ABOUT ── -->
+  <section id="about" class="sec">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <span class="label cs">About</span>
+          <h2 class="sec-h cs">More than<br/>a platform.</h2>
+          <p class="body-text cs">isWithU brings together electronic music artists around a shared energy — high vibration, deep feeling, and the unshakeable belief that music is a spiritual act.</p>
+          <p class="body-text cs">Starting with DJ mix sets, growing toward releases, events, and a label. This is the beginning of something.</p>
+          <div class="about-badge cs">
+            <div class="ab-center">★</div>
+            <span>est. 2026</span>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="feature-list">
+            <div class="feature cs">
+              <span class="f-num">01</span>
+              <div>
+                <h3 class="f-title">Artists First</h3>
+                <p>A home for electronic music creators — we host, amplify, and grow together from day one.</p>
+              </div>
+            </div>
+            <div class="feature cs">
+              <span class="f-num">02</span>
+              <div>
+                <h3 class="f-title">DJ Mix Sets</h3>
+                <p>Long-form electronic journeys. High-energy euphoria and deep ambient explorations, all in one place.</p>
+              </div>
+            </div>
+            <div class="feature cs">
+              <span class="f-num">03</span>
+              <div>
+                <h3 class="f-title">Future Label</h3>
+                <p>Releases and events are coming. The foundation is being built with care and intention.</p>
+              </div>
+            </div>
+            <div class="feature cs">
+              <span class="f-num">04</span>
+              <div>
+                <h3 class="f-title">The Belief</h3>
+                <p>Every artist here knows something greater moves through their music. That is what makes the difference.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TICKER 2 (RTL) ── -->
+  <div class="ticker-band ticker-rtl" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item">Nathanael Amadeus</span>
+      <span class="ticker-star">★</span>
+    </div>
+  </div>
+
+  <!-- ── ARTISTS ── -->
+  <section id="artists" class="sec">
+    <div class="container">
+      <div class="sec-head cs">
+        <span class="label">Artists</span>
+        <h2 class="sec-h">The Collective</h2>
+      </div>
+      <div class="artists-grid">
+
+        <article class="acard cs">
+          <div class="acard-head ah-1">
+            <span class="ah-init">NA</span>
+          </div>
+          <div class="acard-body">
+            <div class="acard-genres">
+              <span class="gtag">Deep House</span>
+              <span class="gtag">Tech House</span>
+              <span class="gtag">Uplifting Techno</span>
+            </div>
+            <h3 class="acard-name">Nathanael Amadeus</h3>
+            <p class="acard-bio">Berlin-based DJ Nathanael blends hypnotic techno and house with deep, atmospheric textures, crafting immersive and
+            uplifting sets that move between driving energy and introspective moments. He believes in storytelling through sound,
+            focusing on raw design and fluid transitions—balancing intensity and depth for both dancefloor and late-night listening.</p>
+          </div>
+          <a href="#mixes" class="acard-cta">1 Mix →</a>
+        </article>
+
+      </div>
+      <!-- <p class="more-note cs">More artists joining — <a href="#join">stay in the loop ★</a></p> -->
+    </div>
+  </section>
+
+  <!-- ── MIXES ── -->
+  <section id="mixes" class="sec sec-deeper">
+    <div class="container">
+      <div class="sec-head cs">
+        <span class="label">Mixes</span>
+        <h2 class="sec-h">Latest Sets</h2>
+      </div>
+      <div class="mixes-table">
+        <div class="mix-row cs" data-playing="false" data-sc-id="sc1">
+          <span class="mn">01</span>
+          <div class="mix-bar mb-1"></div>
+          <div class="mix-info">
+            <span class="ma">Nathanael Amadeus</span>
+            <h3 class="mt">Tomorrow shall be my dancing day! | Live DJ-Set at Jakob Café</h3>
+          </div>
+          <div class="mix-wv" id="mw1"></div>
+          <span class="md">—</span>
+          <span class="mg">Live DJ-Set</span>
+          <a class="mlink" href="https://soundcloud.com/nathanael_a/tomorrow-shall-be-my-dancing" target="_blank" rel="noopener" aria-label="Open on SoundCloud">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 3h6v6M17 3l-9 9M8 5H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-4"/>
+            </svg>
+          </a>
+          <button class="mplay" aria-label="Play">
+            <svg viewBox="0 0 20 20"><polygon points="5,3 17,10 5,17"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TICKER 3 ── -->
+  <div class="ticker-band" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item">MIX SETS</span>
+      <span class="ticker-star">★</span>
+      <span class="ticker-item">FUTURE EVENTS</span>
+      <span class="ticker-star">★</span>
+      <span class="ticker-item">COMMUNITY</span>
+      <span class="ticker-star">★</span>
+    </div>
+  </div>
+
+  <!-- ── MEANING ── -->
+  <section id="meaning" class="sec sec-deepest">
+    <canvas id="meaningCanvas"></canvas>
+    <div class="container">
+      <div class="meaning-body cs">
+        <span class="label label-gold">The Name</span>
+        <div class="manifesto">
+          <p>In every beat.</p>
+          <p>In every frequency.</p>
+          <p>In the silence between the notes —</p>
+          <p class="m-em">You are not alone.</p>
+        </div>
+        <div class="meaning-rule"></div>
+        <div class="meaning-prose">
+          <p>isWithU is a name that carries a conviction.</p>
+          <p>Every artist on this platform makes music knowing that something greater moves through them. That's what we are built on.</p>
+        </div>
+        <div class="meaning-wm">is<em>With</em>U</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── JOIN ── -->
+
+  <!--
+  <section id="join" class="sec">
+    <div class="container">
+      <div class="join-body cs">
+        <span class="label">Stay Connected</span>
+        <h2 class="sec-h">Be part of<br/>what's coming.</h2>
+        <p class="body-text">Events, releases, and new artists on the way. Get notified first.</p>
+        <form class="join-form" onsubmit="handleJoin(event)" id="joinForm">
+          <input type="email" placeholder="your@email.com" aria-label="Email" required />
+          <button type="submit" class="btn btn-gold">I'm In ★</button>
+        </form>
+        <p class="join-confirm" id="jc"></p>
+        <div class="socials">
+          <a href="#" class="soc">SoundCloud</a><span>·</span>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="footer-logo">is<em>With</em>U</span>
+      <!--  <span class="footer-sub">Electronic Music Platform</span> -->
+      </div>
+      <nav class="footer-nav">
+        <a href="#about">Platform</a>
+        <a href="#artists">Artists</a>
+        <a href="#mixes">Mixes</a>
+        <a href="#meaning">The Name</a>
+      <!--  <a href="#join">Join</a> -->
+      </nav>
+      <span class="footer-copy">© 2026 isWithU ★</span>
+    </div>
+  </footer>
+
+  <!-- ── SOUNDCLOUD HIDDEN PLAYERS ── -->
+  <div style="display:none" aria-hidden="true">
+    <iframe id="sc1"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2284142081&auto_play=false&color=%23ffd400"
+      allow="autoplay"></iframe>
+  </div>
+
+  <script src="https://w.soundcloud.com/player/api.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
