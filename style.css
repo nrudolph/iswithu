@@ -847,6 +847,69 @@ body::after {
 .soc:hover { color: var(--gold); }
 
 /* ══════════════════════════════════════════════
+   JOIN THE COLLECTIVE
+══════════════════════════════════════════════ */
+.join-collective {
+  text-align: center;
+}
+.join-what {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+.join-card {
+  background: var(--bg-up);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  padding: 2.5rem 1.8rem;
+  text-align: left;
+  transition: border-color 0.3s var(--ease), transform 0.3s var(--ease);
+}
+.join-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+.jc-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 1.2rem;
+}
+.join-card .f-title { margin-bottom: 0.6rem; }
+.join-card p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.join-cta {
+  margin-top: 3rem;
+  text-align: center;
+}
+.join-cta .body-text {
+  max-width: 500px;
+  margin: 0 auto 1.5rem;
+}
+.join-copied {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--gold);
+  margin-top: 1rem;
+  min-height: 1.2rem;
+  letter-spacing: 0.04em;
+}
+.join-email-hint {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--dim);
+  margin-top: 1rem;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 768px) {
+  .join-what { grid-template-columns: 1fr; }
+}
+
+/* ══════════════════════════════════════════════
    FOOTER
 ══════════════════════════════════════════════ */
 .footer {

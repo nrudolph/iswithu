@@ -189,15 +189,22 @@ document.querySelectorAll('.mplay').forEach(btn => {
 });
 
 /* ══════════════════════════════════════════════
-   JOIN FORM
+   CONTACT (obfuscated email)
 ══════════════════════════════════════════════ */
-function handleJoin(e) {
-  e.preventDefault();
-  const email = e.target.querySelector('input').value;
-  const el    = document.getElementById('jc');
-  el.textContent = `★ You're in — see you at ${email}`;
-  e.target.reset();
-  setTimeout(() => (el.textContent = ''), 7000);
+/* Contact button — try mailto, fallback to clipboard */
+const contactBtn = document.getElementById('contactBtn');
+const joinCopied = document.getElementById('joinCopied');
+if (contactBtn) {
+  const addr = 'iswithu.collective' + '@' + 'proton' + '.me';
+  contactBtn.addEventListener('click', () => {
+    /* Try opening email client */
+    window.open('mailto:' + addr, '_self');
+    /* Also copy to clipboard as fallback */
+    navigator.clipboard.writeText(addr).then(() => {
+      joinCopied.textContent = '★ Email copied: ' + addr;
+      setTimeout(() => { joinCopied.textContent = ''; }, 5000);
+    });
+  });
 }
 
 /* ══════════════════════════════════════════════
